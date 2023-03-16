@@ -2,7 +2,32 @@
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box;
+  border-bottom: box-sizing;
+}
+
+.block {
+  padding: 30px;
+  font-size: 50px;
+  line-height: 60px;
+}
+.block .block__text {
+  font-size: 80px;
+}
+.block .block__text span {
+  color: green;
+}
+.link {
+  color: blue;
+  text-decoration: underline;
+}
+.link:hover, .link:active, .link:focus {
+  color: green;
+}
+.link:before {
+  content: "";
+}
+.link:after {
+  content: "";
 }
 
 /*# sourceMappingURL=styles.css.map */

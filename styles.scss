@@ -2,5 +2,33 @@
     margin: 0;
     padding: 0;
     border: 0;
-    box-sizing: border-box;
+    border-bottom: box-sizing;
+}
+
+.block{
+    padding: 30px;
+    font-size:50px;
+    line-height: 60px;
+    .block__text{
+        font-size: 80px;
+        span{
+            color:green;
+        }
+    }
+    &.block_big{
+        
+    }
+}
+.link{
+    color:blue;
+    text-decoration: underline;
+    &:hover, &:active, &:focus{
+        color:green;
+    }
+    &:before{
+        content:'';
+    }
+    &:after{
+        content:'';
+    }
 }
