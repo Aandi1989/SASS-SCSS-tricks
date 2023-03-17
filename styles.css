@@ -76,7 +76,6 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 .link_2, .link { /* также можно объявлять как класс .tplborder  */
   border-bottom: 5px dashed red;
-  font-size: 50px;
 }
 
 .block {
@@ -104,6 +103,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .link:after {
   content: "";
+}
+
+.link_2 {
+  font-size: 100px;
+  color: yellow;
 }
 
 /*# sourceMappingURL=styles.css.map */
