@@ -7,11 +7,11 @@
 
 .block {
   padding: 30px;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 60px;
 }
 .block .block__text {
-  font-size: 80px;
+  font-size: 40px;
 }
 .block .block__text span {
   color: green;
@@ -21,7 +21,7 @@
   text-decoration: underline;
 }
 .link:hover, .link:active, .link:focus {
-  color: green;
+  color: blue;
 }
 .link:before {
   content: "";

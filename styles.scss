@@ -5,14 +5,18 @@
     border-bottom: box-sizing;
 }
 
+$fz:40px;
+$color_1:green;
+$color_2:blue;
+
 .block{
     padding: 30px;
-    font-size:50px;
+    font-size:$fz;
     line-height: 60px;
     .block__text{
-        font-size: 80px;
+        font-size: $fz;
         span{
-            color:green;
+            color:$color_1;
         }
     }
     &.block_big{
@@ -23,7 +27,7 @@
     color:blue;
     text-decoration: underline;
     &:hover, &:active, &:focus{
-        color:green;
+        color:$color_2;
     }
     &:before{
         content:'';
