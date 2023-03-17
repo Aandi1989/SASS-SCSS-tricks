@@ -74,6 +74,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.link_2, .link { /* также можно объявлять как класс .tplborder  */
+  border-bottom: 5px dashed red;
+  font-size: 50px;
+}
+
 .block {
   padding: 30px;
   font-size: 40px;
@@ -88,6 +93,8 @@ h1, h2, h3, h4, h5, h6 {
 .link {
   color: blue;
   text-decoration: underline;
+  /*если объявляли как класс то выглядить будет так
+  @extend .tplborder  */
 }
 .link:hover, .link:active, .link:focus {
   color: blue;

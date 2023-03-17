@@ -5,6 +5,11 @@ $fz:40px;
 $color_1:green;
 $color_2:blue;
 
+%tplborder{ /* также можно объявлять как класс .tplborder  */
+    border-bottom:5px dashed red;
+    font-size: 50px;
+}
+
 .block{
     padding: 30px;
     font-size:$fz;
@@ -20,7 +25,7 @@ $color_2:blue;
     }
 }
 .link{
-    color:blue;
+    color:$color_2;
     text-decoration: underline;
     &:hover, &:active, &:focus{
         color:$color_2;
@@ -31,4 +36,10 @@ $color_2:blue;
     &:after{
         content:'';
     }
+    @extend %tplborder; /*если объявляли как класс то выглядить будет так
+    @extend .tplborder  */
+}
+
+.link_2{
+    @extend %tplborder; 
 }
